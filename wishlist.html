@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist Saya - AseliLokal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .primary-red { background-color: #E63946; }
+        .text-primary-red { color: #E63946; }
+        .fade-in { animation: fadeIn 0.5s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body class="bg-gray-50 pb-24">
+
+    <header class="sticky top-0 z-50 bg-white border-b border-gray-100 px-4 py-5">
+        <div class="max-w-4xl mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <a href="homepage.html" class="text-gray-600 hover:text-primary-red transition">
+                    <i class="fa fa-arrow-left text-xl"></i>
+                </a>
+                <h1 class="text-xl font-bold text-gray-800">Barang Impian</h1>
+            </div>
+            <span class="bg-red-50 text-primary-red text-xs font-bold px-3 py-1 rounded-full">3 Item</span>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-8 fade-in">
+        
+        <div class="space-y-4">
+
+            <div class="bg-white p-4 rounded-[2rem] shadow-sm border border-gray-100 flex gap-4 items-center group">
+                <div class="w-24 h-24 rounded-2xl overflow-hidden flex-shrink-0 bg-gray-50">
+                    <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=200" class="w-full h-full object-cover">
+                </div>
+                <div class="flex-grow min-w-0">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="text-[10px] font-bold text-pink-500 uppercase tracking-widest">Beauty</span>
+                            <h3 class="font-bold text-gray-800 truncate">Face Serum Organic</h3>
+                            <p class="text-primary-red font-bold text-sm">Rp 125.000</p>
+                        </div>
+                        <button class="text-gray-300 hover:text-red-500 transition">
+                            <i class="fa fa-trash-can"></i>
+                        </button>
+                    </div>
+                    <div class="flex items-center justify-between mt-3">
+                        <span class="text-[10px] text-gray-400"><i class="fa fa-location-dot"></i> Bandung</span>
+                        <button onclick="window.location.href='product1-detail.html'" class="primary-red text-white text-[10px] font-bold px-4 py-2 rounded-xl shadow-md shadow-red-100">Cek Produk</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-[2rem] shadow-sm border border-gray-100 flex gap-4 items-center group">
+                <div class="w-24 h-24 rounded-2xl overflow-hidden flex-shrink-0 bg-gray-50">
+                    <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=200" class="w-full h-full object-cover">
+                </div>
+                <div class="flex-grow min-w-0">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="text-[10px] font-bold text-blue-500 uppercase tracking-widest">Fashion</span>
+                            <h3 class="font-bold text-gray-800 truncate">Sneaker Lokal Kanvas</h3>
+                            <p class="text-primary-red font-bold text-sm">Rp 349.000</p>
+                        </div>
+                        <button class="text-gray-300 hover:text-red-500 transition">
+                            <i class="fa fa-trash-can"></i>
+                        </button>
+                    </div>
+                    <div class="flex items-center justify-between mt-3">
+                        <span class="text-[10px] text-gray-400"><i class="fa fa-location-dot"></i> Solo</span>
+                        <button onclick="window.location.href='product2-detail.html'" class="primary-red text-white text-[10px] font-bold px-4 py-2 rounded-xl shadow-md shadow-red-100">Cek Produk</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-[2rem] shadow-sm border border-gray-100 flex gap-4 items-center group">
+                <div class="w-24 h-24 rounded-2xl overflow-hidden flex-shrink-0 bg-gray-50">
+                    <img src="sambalembe.jpg" class="w-full h-full object-cover">
+                </div>
+                <div class="flex-grow min-w-0">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="text-[10px] font-bold text-orange-500 uppercase tracking-widest">Kuliner</span>
+                            <h3 class="font-bold text-gray-800 truncate">Sambal Embe Bali</h3>
+                            <p class="text-primary-red font-bold text-sm">Rp 35.000</p>
+                        </div>
+                        <button class="text-gray-300 hover:text-red-500 transition">
+                            <i class="fa fa-trash-can"></i>
+                        </button>
+                    </div>
+                    <div class="flex items-center justify-between mt-3">
+                        <span class="text-[10px] text-gray-400"><i class="fa fa-location-dot"></i> Bali</span>
+                        <button onclick="window.location.href='product3-detail.html'" class="primary-red text-white text-[10px] font-bold px-4 py-2 rounded-xl shadow-md shadow-red-100">Cek Produk</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="hidden flex flex-col items-center justify-center py-20 text-center">
+            <div class="w-32 h-32 bg-gray-100 rounded-full flex items-center justify-center mb-6">
+                <i class="fa-regular fa-heart text-4xl text-gray-300"></i>
+            </div>
+            <h2 class="text-lg font-bold text-gray-800">Wishlist Kosong</h2>
+            <p class="text-gray-400 text-sm mt-2 px-10">Sepertinya kamu belum menyimpan produk lokal favoritmu.</p>
+            <a href="homepage.html" class="mt-8 text-primary-red font-bold flex items-center gap-2">
+                Eksplor Sekarang <i class="fa fa-arrow-right"></i>
+            </a>
+        </div>
+
+    </main>
+
+    <nav class="fixed bottom-0 left-0 right-0 bg-white/90 backdrop-blur-md border-t border-gray-100 px-8 py-4 flex justify-between items-center md:hidden z-50">
+        <button onclick="window.location.href='homepage.html'" class="text-gray-400"><i class="fa fa-house text-xl"></i></button>
+        <button onclick="window.location.href='lihatsemuaproduk.html'" class="text-gray-400"><i class="fa fa-compass text-xl"></i></button>
+        <button onclick="window.location.href='wishlist.html'" class="text-primary-red"><i class="fa fa-heart text-xl"></i></button>
+        <button onclick="window.location.href='user-dashboard.html'" class="text-gray-400"><i class="fa fa-user text-xl"></i></button>
+    </nav>
+
+</body>
+</html>
