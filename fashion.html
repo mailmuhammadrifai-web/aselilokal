@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Lokal - AseliLokal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .primary-red { background-color: #E63946; }
+        .text-primary-red { color: #E63946; }
+        .fashion-dark { background-color: #1a1a1a; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="bg-gray-50 pb-20">
+
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 px-4 py-4">
+        <div class="max-w-6xl mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <a href="homepage.html" class="text-gray-600 hover:text-primary-red transition">
+                    <i class="fa fa-arrow-left text-xl"></i>
+                </a>
+                <h1 class="text-xl font-bold text-gray-800 tracking-tight">Fashion Pride</h1>
+            </div>
+            <div class="flex gap-4">
+                <a href="search-result.html" class="text-gray-600"><i class="fa fa-search text-xl"></i></a>
+                <button class="text-gray-600"><i class="fa fa-sliders text-xl"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-6">
+        
+        <div class="w-full h-56 fashion-dark rounded-[2.5rem] mb-8 overflow-hidden relative flex items-center shadow-2xl">
+            <div class="relative z-10 px-8 md:px-12">
+                <span class="text-[10px] font-bold border border-white/30 text-white px-3 py-1 rounded-full uppercase tracking-widest">Trend 2026</span>
+                <h2 class="text-3xl md:text-5xl font-black text-white mt-3 leading-none italic uppercase">Lokal<br><span class="text-primary-red">Culture.</span></h2>
+                <p class="text-xs text-gray-400 mt-4 max-w-[180px]">Koleksi streetwear & batik modern karya anak bangsa.</p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1550614000-4895a10e1bfd?auto=format&fit=crop&w=400" class="absolute right-0 top-0 h-full w-1/2 object-cover grayscale hover:grayscale-0 transition duration-700 opacity-60 md:opacity-100">
+        </div>
+
+        <div class="flex gap-3 mb-8 overflow-x-auto hide-scrollbar">
+            <button class="primary-red text-white px-6 py-2 rounded-2xl text-xs font-bold whitespace-nowrap">Semua Style</button>
+            <button class="bg-white border border-gray-200 text-gray-600 px-6 py-2 rounded-2xl text-xs font-medium whitespace-nowrap hover:border-black transition">Streetwear</button>
+            <button class="bg-white border border-gray-200 text-gray-600 px-6 py-2 rounded-2xl text-xs font-medium whitespace-nowrap hover:border-black transition">Batik Modern</button>
+            <button class="bg-white border border-gray-200 text-gray-600 px-6 py-2 rounded-2xl text-xs font-medium whitespace-nowrap hover:border-black transition">Sepatu</button>
+            <button class="bg-white border border-gray-200 text-gray-600 px-6 py-2 rounded-2xl text-xs font-medium whitespace-nowrap hover:border-black transition">Aksesoris</button>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            
+            <div onclick="window.location.href='product2-detail.html'" class="bg-white rounded-[2rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all group cursor-pointer border border-gray-50">
+                <div class="aspect-[3/4] overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=400" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    <div class="absolute top-3 right-3">
+                        <button class="w-8 h-8 bg-white/90 backdrop-blur rounded-full flex items-center justify-center text-gray-400 hover:text-red-500 shadow-sm">
+                            <i class="fa-regular fa-heart text-sm"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <p class="text-[10px] font-bold text-gray-400 uppercase">Urban Style</p>
+                    <h4 class="text-sm font-bold text-gray-800 mt-1 truncate">Sneakers Kanvas "Wira"</h4>
+                    <p class="text-primary-red font-black text-sm mt-1">Rp 349.000</p>
+                    <div class="flex items-center gap-1 mt-3">
+                        <div class="flex -space-x-1">
+                            <div class="w-3 h-3 rounded-full bg-black border border-white"></div>
+                            <div class="w-3 h-3 rounded-full bg-white border border-gray-200"></div>
+                        </div>
+                        <span class="text-[10px] text-gray-400 ml-2">2 Warna</span>
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='product4-detail.html'" class="bg-white rounded-[2rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all group cursor-pointer border border-gray-50">
+                <div class="aspect-[3/4] overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?auto=format&fit=crop&w=400" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    <div class="absolute top-3 right-3">
+                        <button class="w-8 h-8 bg-white/90 backdrop-blur rounded-full flex items-center justify-center text-gray-400 hover:text-red-500 shadow-sm">
+                            <i class="fa-regular fa-heart text-sm"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <p class="text-[10px] font-bold text-gray-400 uppercase">Accessories</p>
+                    <h4 class="text-sm font-bold text-gray-800 mt-1 truncate">Vintage Totebag Premium</h4>
+                    <p class="text-primary-red font-black text-sm mt-1">Rp 85.000</p>
+                    <div class="flex items-center justify-between mt-3 text-[10px] text-gray-500 font-medium">
+                        <span><i class="fa fa-star text-yellow-400"></i> 4.7</span>
+                        <span>Yogyakarta</span>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+        <section class="mt-12 bg-gray-100 rounded-[2.5rem] p-8 flex flex-col md:flex-row items-center gap-8">
+            <div class="md:w-1/2">
+                <h3 class="text-2xl font-black text-gray-800 mb-4">Fashion Lookbook</h3>
+                <p class="text-sm text-gray-500 leading-relaxed">Dapatkan inspirasi mix & match produk lokal dari para fashion stylist terbaik tanah air.</p>
+                <button class="mt-6 px-8 py-3 bg-black text-white rounded-xl text-sm font-bold hover:bg-gray-800 transition">Lihat Inspirasi</button>
+            </div>
+            <div class="md:w-1/2 grid grid-cols-2 gap-2">
+                <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=200" class="rounded-2xl w-full h-32 object-cover">
+                <img src="https://images.unsplash.com/photo-1529139513466-4209141f4bc7?auto=format&fit=crop&w=200" class="rounded-2xl w-full h-32 object-cover">
+            </div>
+        </section>
+
+    </main>
+
+    <div class="fixed bottom-0 left-0 right-0 bg-white/80 backdrop-blur-md border-t border-gray-100 px-8 py-4 flex justify-between items-center md:hidden z-50">
+        <button onclick="window.location.href='homepage.html'" class="text-gray-400"><i class="fa fa-house text-xl"></i></button>
+        <button onclick="window.location.href='lihatsemuaproduk.html'" class="text-gray-400"><i class="fa fa-compass text-xl"></i></button>
+        <button onclick="window.location.href='wishlist.html'" class="text-gray-400"><i class="fa fa-heart text-xl"></i></button>
+        <button onclick="window.location.href='user-dashboard.html'" class="text-gray-400"><i class="fa fa-user text-xl"></i></button>
+    </div>
+
+</body>
+</html>
