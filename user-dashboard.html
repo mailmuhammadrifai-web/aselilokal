@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Saya - AseliLokal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .primary-red { background-color: #E63946; }
+        .text-primary-red { color: #E63946; }
+        .profile-gradient { background: linear-gradient(180deg, #E63946 0%, #b91c1c 100%); }
+    </style>
+</head>
+<body class="bg-gray-50 pb-24">
+
+    <div class="profile-gradient pt-12 pb-24 px-6 rounded-b-[3rem] shadow-xl">
+        <div class="max-w-2xl mx-auto flex items-center justify-between text-white">
+            <a href="homepage.html" class="w-10 h-10 flex items-center justify-center bg-white/20 rounded-full backdrop-blur-md">
+                <i class="fa fa-arrow-left"></i>
+            </a>
+            <h1 class="font-bold text-lg">Profil Pengguna</h1>
+            <button class="w-10 h-10 flex items-center justify-center bg-white/20 rounded-full backdrop-blur-md">
+                <i class="fa fa-gear"></i>
+            </button>
+        </div>
+
+        <div class="max-w-2xl mx-auto mt-8 flex flex-col items-center">
+            <div class="relative">
+                <div class="w-24 h-24 rounded-[2rem] border-4 border-white overflow-hidden shadow-2xl">
+                    <img src="https://ui-avatars.com/api/?name=Warga+Lokal&background=ffffff&color=E63946&size=128" alt="Avatar">
+                </div>
+                <div class="absolute -bottom-2 -right-2 bg-yellow-400 text-white p-2 rounded-xl shadow-lg border-2 border-white">
+                    <i class="fa fa-crown text-xs"></i>
+                </div>
+            </div>
+            <h2 class="text-white font-bold text-xl mt-4">Warga Lokal Sejati</h2>
+            <p class="text-red-100 text-xs">Bergabung sejak Januari 2026</p>
+        </div>
+    </div>
+
+    <main class="max-w-2xl mx-auto px-6 -mt-12">
+        
+        <div class="grid grid-cols-3 gap-4 bg-white p-6 rounded-[2.5rem] shadow-xl shadow-gray-200/50 mb-8 border border-gray-50">
+            <div class="text-center">
+                <p class="text-[10px] font-bold text-gray-400 uppercase tracking-tighter">Poin</p>
+                <p class="text-lg font-black text-gray-800">1.250</p>
+            </div>
+            <div class="text-center border-x border-gray-100">
+                <p class="text-[10px] font-bold text-gray-400 uppercase tracking-tighter">Review</p>
+                <p class="text-lg font-black text-gray-800">12</p>
+            </div>
+            <div class="text-center">
+                <p class="text-[10px] font-bold text-gray-400 uppercase tracking-tighter">Support</p>
+                <p class="text-lg font-black text-gray-800">8 Prov</p>
+            </div>
+        </div>
+
+        <div class="space-y-3">
+            <h3 class="text-sm font-bold text-gray-800 ml-2 mb-4">Aktivitas Belanja</h3>
+            
+            <button onclick="window.location.href='wishlist.html'" class="w-full bg-white p-5 rounded-2xl flex items-center justify-between group hover:bg-red-50 transition border border-transparent hover:border-red-100">
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 bg-pink-50 rounded-xl flex items-center justify-center text-pink-500">
+                        <i class="fa-regular fa-heart text-lg"></i>
+                    </div>
+                    <span class="font-bold text-gray-700 text-sm">Wishlist Saya</span>
+                </div>
+                <i class="fa fa-chevron-right text-gray-300 group-hover:text-primary-red transition"></i>
+            </button>
+
+            <button onclick="window.location.href='daftar-transaksi.html'"class="w-full bg-white p-5 rounded-2xl flex items-center justify-between group hover:bg-blue-50 transition border border-transparent hover:border-blue-100">
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center text-blue-500">
+                        <i class="fa fa-box text-lg"></i>
+                    </div>
+                    <span class="font-bold text-gray-700 text-sm">Daftar Transaksi</span>
+                </div>
+                <i class="fa fa-chevron-right text-gray-300 group-hover:text-blue-500 transition"></i>
+            </button>
+
+            <button onclick="window.location.href='notification.html'" class="w-full bg-white p-5 rounded-2xl flex items-center justify-between group hover:bg-yellow-50 transition border border-transparent hover:border-yellow-100">
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 bg-yellow-50 rounded-xl flex items-center justify-center text-yellow-600">
+                        <i class="fa-regular fa-bell text-lg"></i>
+                    </div>
+                    <span class="font-bold text-gray-700 text-sm">Pusat Notifikasi</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="bg-red-500 text-white text-[10px] px-2 py-0.5 rounded-full font-bold">2</span>
+                    <i class="fa fa-chevron-right text-gray-300 transition"></i>
+                </div>
+            </button>
+        </div>
+
+        <div class="mt-10 space-y-3">
+            <h3 class="text-sm font-bold text-gray-800 ml-2 mb-4">Lainnya</h3>
+            
+            <button class="w-full bg-white p-5 rounded-2xl flex items-center justify-between group border border-gray-100">
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 bg-gray-50 rounded-xl flex items-center justify-center text-gray-400">
+                        <i class="fa fa-headset text-lg"></i>
+                    </div>
+                    <span class="font-bold text-gray-700 text-sm">Pusat Bantuan</span>
+                </div>
+                <i class="fa fa-chevron-right text-gray-300 transition"></i>
+            </button>
+
+            <button onclick="window.location.href='index.html'" class="w-full bg-white p-5 rounded-2xl flex items-center justify-between group border border-red-50">
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 bg-red-50 rounded-xl flex items-center justify-center text-primary-red">
+                        <i class="fa fa-right-from-bracket text-lg"></i>
+                    </div>
+                    <span class="font-bold text-primary-red text-sm">Keluar Akun</span>
+                </div>
+            </button>
+        </div>
+
+        <p class="text-center text-[10px] text-gray-300 mt-12 uppercase tracking-widest font-bold">AseliLokal v1.0.26</p>
+    </main>
+
+    <nav class="fixed bottom-0 left-0 right-0 bg-white/90 backdrop-blur-md border-t border-gray-100 px-8 py-4 flex justify-between items-center md:hidden z-50">
+        <button onclick="window.location.href='homepage.html'" class="text-gray-400"><i class="fa fa-house text-xl"></i></button>
+        <button onclick="window.location.href='lihatsemuaproduk.html'" class="text-gray-400"><i class="fa fa-compass text-xl"></i></button>
+        <button onclick="window.location.href='wishlist.html'" class="text-gray-400"><i class="fa fa-heart text-xl"></i></button>
+        <button onclick="window.location.href='user-dashboard.html'" class="text-primary-red"><i class="fa fa-user text-xl"></i></button>
+    </nav>
+
+</body>
+</html>
