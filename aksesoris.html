@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aksesoris Lokal - AseliLokal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .primary-teal { background-color: #006D77; }
+        .text-primary-teal { color: #006D77; }
+        .acc-gradient { background: linear-gradient(135deg, #83c5be 0%, #edf6f9 100%); }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="bg-gray-50 pb-20">
+
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 px-4 py-4">
+        <div class="max-w-6xl mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <a href="homepage.html" class="text-gray-600 hover:text-primary-teal transition">
+                    <i class="fa fa-arrow-left text-xl"></i>
+                </a>
+                <h1 class="text-xl font-bold text-gray-800 tracking-tight">Kriya & Aksesoris</h1>
+            </div>
+            <div class="flex gap-4">
+                <a href="search-result.html" class="text-gray-600"><i class="fa fa-search text-xl"></i></a>
+                <a href="wishlist.html" class="text-gray-600"><i class="fa-regular fa-heart text-xl"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-6">
+        
+        <div class="w-full h-48 acc-gradient rounded-[2.5rem] mb-8 overflow-hidden relative flex items-center px-8 shadow-md">
+            <div class="relative z-10 max-w-[240px]">
+                <span class="text-[10px] font-bold bg-[#006D77]/20 text-teal-900 px-3 py-1 rounded-full uppercase tracking-widest">Handmade Art</span>
+                <h2 class="text-2xl font-black text-teal-900 mt-2 leading-tight">Sentuhan Seni dalam Detail</h2>
+                <p class="text-[11px] text-teal-800/80 mt-2 font-medium">Lengkapi gayamu dengan aksesoris autentik buatan pengrajin lokal.</p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=300" class="absolute right-0 h-full w-1/2 object-cover opacity-90" style="clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);">
+        </div>
+
+        <div class="flex gap-3 mb-8 overflow-x-auto hide-scrollbar">
+            <button class="primary-teal text-white px-6 py-2 rounded-2xl text-xs font-bold whitespace-nowrap shadow-lg shadow-teal-100">Semua Kriya</button>
+            <button class="bg-white border border-gray-100 text-gray-500 px-6 py-2 rounded-2xl text-xs font-medium whitespace-nowrap hover:border-teal-500 transition">Perhiasan</button>
+            <button class="bg-white border border-gray-100 text-gray-500 px-6 py-2 rounded-2xl text-xs font-medium whitespace-nowrap hover:border-teal-500 transition">Tas & Dompet</button>
+            <button class="bg-white border border-gray-100 text-gray-500 px-6 py-2 rounded-2xl text-xs font-medium whitespace-nowrap hover:border-teal-500 transition">Dekorasi</button>
+            <button class="bg-white border border-gray-100 text-gray-500 px-6 py-2 rounded-2xl text-xs font-medium whitespace-nowrap hover:border-teal-500 transition">Kacamata</button>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            
+            <div onclick="window.location.href='product4-detail.html'" class="bg-white p-4 rounded-[2.5rem] shadow-sm border border-gray-50 hover:shadow-xl transition-all group cursor-pointer text-center">
+                <div class="aspect-square rounded-[2rem] overflow-hidden mb-4 bg-gray-50 flex items-center justify-center">
+                    <img src="https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?auto=format&fit=crop&w=400" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                </div>
+                <span class="text-[9px] font-bold text-teal-600 uppercase tracking-[0.2em]">Craftmanship</span>
+                <h4 class="text-sm font-bold text-gray-800 mt-2 truncate px-2">Vintage Totebag Premium</h4>
+                <p class="text-teal-700 font-black text-sm mt-1">Rp 85.000</p>
+                <div class="flex items-center justify-center gap-2 mt-3 pt-3 border-t border-gray-50">
+                    <i class="fa fa-star text-yellow-400 text-[10px]"></i>
+                    <span class="text-[10px] font-bold text-gray-700">4.7</span>
+                    <span class="text-[10px] text-gray-400">| Yogyakarta</span>
+                </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-[2.5rem] shadow-sm border border-gray-50 hover:shadow-xl transition-all group cursor-pointer text-center">
+                <div class="aspect-square rounded-[2rem] overflow-hidden mb-4 bg-gray-50">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=400" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                </div>
+                <span class="text-[9px] font-bold text-teal-600 uppercase tracking-[0.2em]">Timepiece</span>
+                <h4 class="text-sm font-bold text-gray-800 mt-2 truncate px-2">Jam Tangan Kayu Jati</h4>
+                <p class="text-teal-700 font-black text-sm mt-1">Rp 450.000</p>
+                <div class="flex items-center justify-center gap-2 mt-3 pt-3 border-t border-gray-50">
+                    <i class="fa fa-star text-yellow-400 text-[10px]"></i>
+                    <span class="text-[10px] font-bold text-gray-700">4.9</span>
+                    <span class="text-[10px] text-gray-400">| Klaten</span>
+                </div>
+            </div>
+
+            </div>
+
+        <section class="mt-12 bg-white rounded-[2.5rem] p-8 border border-gray-100 flex flex-col md:flex-row items-center gap-8 shadow-sm">
+            <div class="md:w-1/3">
+                <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=300" class="rounded-[2rem] w-full aspect-square object-cover rotate-3">
+            </div>
+            <div class="md:w-2/3">
+                <h3 class="text-xl font-bold text-gray-800 mb-3">Dibalik Sebuah Karya</h3>
+                <p class="text-sm text-gray-500 leading-relaxed mb-6">Kenali lebih dalam para pengrajin di balik produk favoritmu. Setiap aksesoris menceritakan kisah tentang ketekunan dan warisan budaya Indonesia.</p>
+                <a href="article-detail.html" class="inline-flex items-center gap-2 text-primary-teal font-bold text-sm hover:underline">
+                    Baca Kisah Mereka <i class="fa fa-chevron-right text-xs"></i>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="fixed bottom-0 left-0 right-0 bg-white/80 backdrop-blur-md border-t border-gray-100 px-8 py-4 flex justify-between items-center md:hidden z-50">
+        <button onclick="window.location.href='homepage.html'" class="text-gray-400"><i class="fa fa-house text-xl"></i></button>
+        <button onclick="window.location.href='lihatsemuaproduk.html'" class="text-gray-400"><i class="fa fa-compass text-xl"></i></button>
+        <button onclick="window.location.href='wishlist.html'" class="text-gray-400"><i class="fa fa-heart text-xl"></i></button>
+        <button onclick="window.location.href='user-dashboard.html'" class="text-gray-400"><i class="fa fa-user text-xl"></i></button>
+    </div>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aksesoris Lokal - AseliLokal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .primary-teal { background-color: #006D77; }
+        .text-primary-teal { color: #006D77; }
+        .acc-gradient { background: linear-gradient(135deg, #83c5be 0%, #edf6f9 100%); }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="bg-gray-50 pb-20">
+
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 px-4 py-4">
+        <div class="max-w-6xl mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <a href="homepage.html" class="text-gray-600 hover:text-primary-teal transition">
+                    <i class="fa fa-arrow-left text-xl"></i>
+                </a>
+                <h1 class="text-xl font-bold text-gray-800 tracking-tight">Kriya & Aksesoris</h1>
+            </div>
+            <div class="flex gap-4">
+                <a href="search-result.html" class="text-gray-600"><i class="fa fa-search text-xl"></i></a>
+                <a href="wishlist.html" class="text-gray-600"><i class="fa-regular fa-heart text-xl"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-6">
+        
+        <div class="w-full h-48 acc-gradient rounded-[2.5rem] mb-8 overflow-hidden relative flex items-center px-8 shadow-md">
+            <div class="relative z-10 max-w-[240px]">
+                <span class="text-[10px] font-bold bg-[#006D77]/20 text-teal-900 px-3 py-1 rounded-full uppercase tracking-widest">Handmade Art</span>
+                <h2 class="text-2xl font-black text-teal-900 mt-2 leading-tight">Sentuhan Seni dalam Detail</h2>
+                <p class="text-[11px] text-teal-800/80 mt-2 font-medium">Lengkapi gayamu dengan aksesoris autentik buatan pengrajin lokal.</p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=300" class="absolute right-0 h-full w-1/2 object-cover opacity-90" style="clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);">
+        </div>
+
+        <div class="flex gap-3 mb-8 overflow-x-auto hide-scrollbar">
+            <button class="primary-teal text-white px-6 py-2 rounded-2xl text-xs font-bold whitespace-nowrap shadow-lg shadow-teal-100">Semua Kriya</button>
+            <button class="bg-white border border-gray-100 text-gray-500 px-6 py-2 rounded-2xl text-xs font-medium whitespace-nowrap hover:border-teal-500 transition">Perhiasan</button>
+            <button class="bg-white border border-gray-100 text-gray-500 px-6 py-2 rounded-2xl text-xs font-medium whitespace-nowrap hover:border-teal-500 transition">Tas & Dompet</button>
+            <button class="bg-white border border-gray-100 text-gray-500 px-6 py-2 rounded-2xl text-xs font-medium whitespace-nowrap hover:border-teal-500 transition">Dekorasi</button>
+            <button class="bg-white border border-gray-100 text-gray-500 px-6 py-2 rounded-2xl text-xs font-medium whitespace-nowrap hover:border-teal-500 transition">Kacamata</button>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            
+            <div onclick="window.location.href='product4-detail.html'" class="bg-white p-4 rounded-[2.5rem] shadow-sm border border-gray-50 hover:shadow-xl transition-all group cursor-pointer text-center">
+                <div class="aspect-square rounded-[2rem] overflow-hidden mb-4 bg-gray-50 flex items-center justify-center">
+                    <img src="https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?auto=format&fit=crop&w=400" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                </div>
+                <span class="text-[9px] font-bold text-teal-600 uppercase tracking-[0.2em]">Craftmanship</span>
+                <h4 class="text-sm font-bold text-gray-800 mt-2 truncate px-2">Vintage Totebag Premium</h4>
+                <p class="text-teal-700 font-black text-sm mt-1">Rp 85.000</p>
+                <div class="flex items-center justify-center gap-2 mt-3 pt-3 border-t border-gray-50">
+                    <i class="fa fa-star text-yellow-400 text-[10px]"></i>
+                    <span class="text-[10px] font-bold text-gray-700">4.7</span>
+                    <span class="text-[10px] text-gray-400">| Yogyakarta</span>
+                </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-[2.5rem] shadow-sm border border-gray-50 hover:shadow-xl transition-all group cursor-pointer text-center">
+                <div class="aspect-square rounded-[2rem] overflow-hidden mb-4 bg-gray-50">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=400" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                </div>
+                <span class="text-[9px] font-bold text-teal-600 uppercase tracking-[0.2em]">Timepiece</span>
+                <h4 class="text-sm font-bold text-gray-800 mt-2 truncate px-2">Jam Tangan Kayu Jati</h4>
+                <p class="text-teal-700 font-black text-sm mt-1">Rp 450.000</p>
+                <div class="flex items-center justify-center gap-2 mt-3 pt-3 border-t border-gray-50">
+                    <i class="fa fa-star text-yellow-400 text-[10px]"></i>
+                    <span class="text-[10px] font-bold text-gray-700">4.9</span>
+                    <span class="text-[10px] text-gray-400">| Klaten</span>
+                </div>
+            </div>
+
+            </div>
+
+        <section class="mt-12 bg-white rounded-[2.5rem] p-8 border border-gray-100 flex flex-col md:flex-row items-center gap-8 shadow-sm">
+            <div class="md:w-1/3">
+                <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=300" class="rounded-[2rem] w-full aspect-square object-cover rotate-3">
+            </div>
+            <div class="md:w-2/3">
+                <h3 class="text-xl font-bold text-gray-800 mb-3">Dibalik Sebuah Karya</h3>
+                <p class="text-sm text-gray-500 leading-relaxed mb-6">Kenali lebih dalam para pengrajin di balik produk favoritmu. Setiap aksesoris menceritakan kisah tentang ketekunan dan warisan budaya Indonesia.</p>
+                <a href="article-detail.html" class="inline-flex items-center gap-2 text-primary-teal font-bold text-sm hover:underline">
+                    Baca Kisah Mereka <i class="fa fa-chevron-right text-xs"></i>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="fixed bottom-0 left-0 right-0 bg-white/80 backdrop-blur-md border-t border-gray-100 px-8 py-4 flex justify-between items-center md:hidden z-50">
+        <button onclick="window.location.href='homepage.html'" class="text-gray-400"><i class="fa fa-house text-xl"></i></button>
+        <button onclick="window.location.href='lihatsemuaproduk.html'" class="text-gray-400"><i class="fa fa-compass text-xl"></i></button>
+        <button onclick="window.location.href='wishlist.html'" class="text-gray-400"><i class="fa fa-heart text-xl"></i></button>
+        <button onclick="window.location.href='user-dashboard.html'" class="text-gray-400"><i class="fa fa-user text-xl"></i></button>
+    </div>
+
+</body>
+</html>
