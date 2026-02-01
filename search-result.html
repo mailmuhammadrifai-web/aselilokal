@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Pencarian - AseliLokal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .primary-red { background-color: #E63946; }
+        .text-primary-red { color: #E63946; }
+        .custom-checkbox:checked { background-color: #E63946; border-color: #E63946; }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <header class="sticky top-0 z-50 bg-white border-b border-gray-100 px-4 py-4">
+        <div class="max-w-7xl mx-auto flex items-center gap-4">
+            <a href="homepage.html" class="text-gray-600 hover:text-primary-red transition">
+                <i class="fa fa-arrow-left text-xl"></i>
+            </a>
+            <div class="flex-grow relative">
+                <i class="fa fa-search absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                <input type="text" value="Skincare" class="w-full pl-11 pr-4 py-2.5 bg-gray-100 rounded-2xl text-sm focus:ring-2 focus:ring-red-500/20 outline-none transition">
+            </div>
+            <button class="md:hidden text-gray-600 border p-2 rounded-xl" onclick="toggleFilter()">
+                <i class="fa fa-sliders"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-8">
+        <div class="flex flex-col md:flex-row gap-8">
+            
+            <aside id="filter-sidebar" class="hidden md:block w-full md:w-64 space-y-8 bg-white p-6 rounded-[2rem] border border-gray-100 h-fit sticky top-24">
+                <div>
+                    <h3 class="font-bold text-gray-800 mb-4">Urutkan</h3>
+                    <select class="w-full bg-gray-50 border-none rounded-xl px-4 py-2 text-sm text-gray-600 outline-none">
+                        <option>Terbaru</option>
+                        <option>Harga Terendah</option>
+                        <option>Rating Tertinggi</option>
+                    </select>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-gray-800 mb-4 flex items-center gap-2">
+                        <i class="fa fa-location-dot text-primary-red"></i> Lokasi (Provinsi)
+                    </h3>
+                    <div class="space-y-3 max-h-48 overflow-y-auto pr-2 custom-scrollbar">
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="checkbox" class="w-5 h-5 rounded border-gray-300 accent-red-500">
+                            <span class="text-sm text-gray-600 group-hover:text-primary-red">Jawa Barat</span>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="checkbox" class="w-5 h-5 rounded border-gray-300 accent-red-500">
+                            <span class="text-sm text-gray-600 group-hover:text-primary-red">DKI Jakarta</span>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="checkbox" class="w-5 h-5 rounded border-gray-300 accent-red-500">
+                            <span class="text-sm text-gray-600 group-hover:text-primary-red">Jawa Timur</span>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="checkbox" class="w-5 h-5 rounded border-gray-300 accent-red-500">
+                            <span class="text-sm text-gray-600 group-hover:text-primary-red">Bali</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-gray-800 mb-4">Rating</h3>
+                    <div class="space-y-2">
+                        <button class="flex items-center gap-2 text-sm text-gray-600 hover:text-primary-red">
+                            <i class="fa fa-star text-yellow-400"></i> 4.5 ke atas
+                        </button>
+                    </div>
+                </div>
+
+                <button class="w-full primary-red text-white py-3 rounded-xl font-bold text-sm shadow-lg shadow-red-100 hover:bg-red-700 transition">
+                    Terapkan Filter
+                </button>
+            </aside>
+
+            <div class="flex-grow">
+                <div class="flex justify-between items-center mb-6">
+                    <p class="text-sm text-gray-500">Menampilkan <span class="font-bold text-gray-800 italic">24 Produk</span> Lokal</p>
+                </div>
+
+                <div class="grid grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white p-4 rounded-[2.5rem] shadow-sm hover:shadow-xl transition-all border border-gray-50 group">
+                        <div class="aspect-square rounded-[2rem] overflow-hidden bg-gray-100 mb-4 relative">
+                            <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=400" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                            <button class="absolute top-3 right-3 w-10 h-10 bg-white/80 backdrop-blur rounded-full flex items-center justify-center text-gray-400 hover:text-red-500 transition">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Natural Beauty</span>
+                        <h4 class="font-bold text-gray-800 mt-1 truncate">Moisturizer Lidah Buaya</h4>
+                        <p class="text-primary-red font-bold text-lg mt-1">Rp 89.000</p>
+                        <div class="flex items-center justify-between mt-3">
+                            <div class="flex items-center gap-1 text-[11px] text-gray-500">
+                                <i class="fa fa-location-dot text-red-400"></i>
+                                <span>Bandung</span>
+                            </div>
+                            <div class="flex items-center gap-1 text-[11px] font-bold text-gray-800">
+                                <i class="fa fa-star text-yellow-400"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-[2.5rem] shadow-sm hover:shadow-xl transition-all border border-gray-50 group">
+                        <div class="aspect-square rounded-[2rem] overflow-hidden bg-gray-100 mb-4 relative">
+                            <img src="https://images.unsplash.com/photo-1612817288484-6f916006741a?auto=format&fit=crop&w=400" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                            <button class="absolute top-3 right-3 w-10 h-10 bg-white/80 backdrop-blur rounded-full flex items-center justify-center text-gray-400 hover:text-red-500 transition">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Local Glow</span>
+                        <h4 class="font-bold text-gray-800 mt-1 truncate">Organic Face Oil</h4>
+                        <p class="text-primary-red font-bold text-lg mt-1">Rp 145.000</p>
+                        <div class="flex items-center justify-between mt-3">
+                            <div class="flex items-center gap-1 text-[11px] text-gray-500">
+                                <i class="fa fa-location-dot text-red-400"></i>
+                                <span>Bali</span>
+                            </div>
+                            <div class="flex items-center gap-1 text-[11px] font-bold text-gray-800">
+                                <i class="fa fa-star text-yellow-400"></i>
+                                <span>5.0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function toggleFilter() {
+            const sidebar = document.getElementById('filter-sidebar');
+            sidebar.classList.toggle('hidden');
+            if(!sidebar.classList.contains('hidden')) {
+                sidebar.classList.add('fixed', 'inset-0', 'z-50', 'w-full', 'h-full', 'rounded-none');
+            } else {
+                sidebar.classList.remove('fixed', 'inset-0', 'z-50', 'w-full', 'h-full', 'rounded-none');
+            }
+        }
+    </script>
+</body>
+</html>
