@@ -21,7 +21,7 @@
         <div class="max-w-6xl mx-auto px-4 py-3">
             <div class="flex items-center justify-between gap-4">
                 <div class="flex-shrink-0 cursor-pointer" onclick="window.location.href='homepage.html'">
-                    <h1 class="text-2xl font-black text-primary-red tracking-tighter">AL</h1>
+                    <img src="logobg.png" alt="AseliLokal" class="h-9 w-auto object-contain">
                 </div>
 
                 <form action="search-result.html" method="GET" class="flex-grow max-w-xl relative">
@@ -40,7 +40,7 @@
             </div>
 
             <div class="flex gap-3 mt-4 overflow-x-auto hide-scrollbar pb-1">
-                <button onclick="window.location.href='homepage.html'" class="primary-red text-white px-5 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap">Semua</button>
+                <button onclick="window.location.href='homepage.html'" class="primary-red text-white px-5 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap shadow-sm shadow-red-100">Semua</button>
                 <button onclick="window.location.href='beauty.html'" class="bg-white border border-gray-100 px-5 py-1.5 rounded-xl text-xs font-medium text-gray-600 hover:border-red-500 whitespace-nowrap transition">Beauty</button>
                 <button onclick="window.location.href='fashion.html'" class="bg-white border border-gray-100 px-5 py-1.5 rounded-xl text-xs font-medium text-gray-600 hover:border-red-500 whitespace-nowrap transition">Fashion</button>
                 <button onclick="window.location.href='kuliner.html'" class="bg-white border border-gray-100 px-5 py-1.5 rounded-xl text-xs font-medium text-gray-600 hover:border-red-500 whitespace-nowrap transition">Kuliner</button>
@@ -51,7 +51,7 @@
 
     <main class="max-w-6xl mx-auto px-4 py-6">
         
-        <div class="w-full h-40 md:h-64 primary-red rounded-[2rem] mb-10 overflow-hidden relative shadow-xl shadow-red-100">
+        <div class="w-full h-40 md:h-64 primary-red rounded-[2.5rem] mb-10 overflow-hidden relative shadow-xl shadow-red-100">
             <div class="absolute inset-0 bg-black/10"></div>
             <div class="relative z-10 h-full flex flex-col justify-center px-8 text-white">
                 <span class="text-xs font-bold uppercase tracking-widest bg-white/20 w-fit px-3 py-1 rounded-full mb-2">Campaign 2026</span>
@@ -63,12 +63,12 @@
         <section class="mb-12">
             <div class="flex items-center justify-between mb-6">
                 <h3 class="text-lg font-bold text-gray-800">Pilihan Warga Lokal</h3>
-                <a href="lihatsemuaproduk.html" class="text-primary-red text-xs font-bold flex items-center gap-1">Lihat Semua <i class="fa fa-arrow-right"></i></a>
+                <a href="lihatsemuaproduk.html" class="text-primary-red text-xs font-bold flex items-center gap-1">Lihat Semua <i class="fa fa-arrow-right text-[10px]"></i></a>
             </div>
 
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div onclick="window.location.href='product1-detail.html'" class="product-card bg-white p-3 rounded-[2rem] shadow-sm border border-gray-50 transition-all hover:shadow-xl cursor-pointer">
-                    <div class="aspect-square rounded-2xl overflow-hidden mb-3 bg-gray-100">
+                <div onclick="window.location.href='product1-detail.html'" class="product-card bg-white p-3 rounded-[2rem] shadow-sm border border-gray-50 transition-all hover:shadow-xl cursor-pointer group">
+                    <div class="aspect-square rounded-2xl overflow-hidden mb-3 bg-gray-50">
                         <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=400" class="w-full h-full object-cover transition-transform duration-500">
                     </div>
                     <span class="text-[9px] font-bold text-gray-400 uppercase tracking-tighter">Skincare</span>
@@ -80,8 +80,8 @@
                     </div>
                 </div>
 
-                <div onclick="window.location.href='product2-detail.html'" class="product-card bg-white p-3 rounded-[2rem] shadow-sm border border-gray-50 transition-all hover:shadow-xl cursor-pointer">
-                    <div class="aspect-square rounded-2xl overflow-hidden mb-3 bg-gray-100">
+                <div onclick="window.location.href='product2-detail.html'" class="product-card bg-white p-3 rounded-[2rem] shadow-sm border border-gray-50 transition-all hover:shadow-xl cursor-pointer group">
+                    <div class="aspect-square rounded-2xl overflow-hidden mb-3 bg-gray-50">
                         <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=400" class="w-full h-full object-cover transition-transform duration-500">
                     </div>
                     <span class="text-[9px] font-bold text-gray-400 uppercase tracking-tighter">Fashion</span>
@@ -93,9 +93,9 @@
                     </div>
                 </div>
 
-                <div onclick="window.location.href='product3-detail.html'" class="product-card bg-white p-3 rounded-[2rem] shadow-sm border border-gray-50 transition-all hover:shadow-xl cursor-pointer">
-                    <div class="aspect-square rounded-2xl overflow-hidden mb-3 bg-gray-100">
-                        <img src="https://images.unsplash.com/photo-1594488651083-20603770387d?auto=format&fit=crop&w=400" class="w-full h-full object-cover transition-transform duration-500">
+                <div onclick="window.location.href='product3-detail.html'" class="product-card bg-white p-3 rounded-[2rem] shadow-sm border border-gray-50 transition-all hover:shadow-xl cursor-pointer group">
+                    <div class="aspect-square rounded-2xl overflow-hidden mb-3 bg-gray-50">
+                        <img src="sambalembe.jpg" class="w-full h-full object-cover transition-transform duration-500">
                     </div>
                     <span class="text-[9px] font-bold text-gray-400 uppercase tracking-tighter">Kuliner</span>
                     <h4 class="text-sm font-semibold text-gray-800 truncate">Sambal Embe Bali</h4>
@@ -106,8 +106,8 @@
                     </div>
                 </div>
 
-                <div onclick="window.location.href='product4-detail.html'" class="product-card bg-white p-3 rounded-[2rem] shadow-sm border border-gray-50 transition-all hover:shadow-xl cursor-pointer">
-                    <div class="aspect-square rounded-2xl overflow-hidden mb-3 bg-gray-100">
+                <div onclick="window.location.href='product4-detail.html'" class="product-card bg-white p-3 rounded-[2rem] shadow-sm border border-gray-50 transition-all hover:shadow-xl cursor-pointer group">
+                    <div class="aspect-square rounded-2xl overflow-hidden mb-3 bg-gray-50">
                         <img src="https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?auto=format&fit=crop&w=400" class="w-full h-full object-cover transition-transform duration-500">
                     </div>
                     <span class="text-[9px] font-bold text-gray-400 uppercase tracking-tighter">Aksesoris</span>
@@ -128,25 +128,25 @@
                 <h3 class="text-xl font-bold text-gray-800 mb-6 relative">Artikel & Tips Beauty</h3>
                 
                 <div class="grid md:grid-cols-2 gap-6 relative">
-                    <a href="article-detail.html" class="group flex gap-4 items-center">
-                        <div class="w-24 h-24 rounded-2xl overflow-hidden flex-shrink-0">
-                            <img src="https://images.unsplash.com/photo-1596462502278-27bfdc4033c8?auto=format&fit=crop&w=200" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <a href="article1-detail.html" class="group flex gap-4 items-center">
+                        <div class="w-24 h-24 rounded-2xl overflow-hidden flex-shrink-0 bg-gray-100">
+                            <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=200" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                         </div>
                         <div>
-                            <span class="text-[10px] font-bold text-primary-red uppercase">Skincare Tips</span>
+                            <span class="text-[10px] font-bold text-primary-red uppercase tracking-wider">Skincare Tips</span>
                             <h4 class="font-bold text-gray-800 text-sm leading-tight mt-1 group-hover:text-primary-red transition">Rahasia Glowing dengan Brand Lokal Bandung</h4>
                             <p class="text-[11px] text-gray-500 mt-1">Baca selengkapnya...</p>
                         </div>
                     </a>
 
-                    <a href="article-detail.html" class="group flex gap-4 items-center">
-                        <div class="w-24 h-24 rounded-2xl overflow-hidden flex-shrink-0">
-                            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=200" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <a href="article2-detail.html" class="group flex gap-4 items-center">
+                        <div class="w-24 h-24 rounded-2xl overflow-hidden flex-shrink-0 bg-gray-100">
+                            <img src="https://images.unsplash.com/photo-1586776977607-310e9c725c37?auto=format&fit=crop&w=200" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                         </div>
                         <div>
-                            <span class="text-[10px] font-bold text-primary-red uppercase">New Release</span>
+                            <span class="text-[10px] font-bold text-primary-red uppercase tracking-wider">New Release</span>
                             <h4 class="font-bold text-gray-800 text-sm leading-tight mt-1 group-hover:text-primary-red transition">5 Lipstik Lokal yang Tahan Lama Seharian</h4>
-                            <p class="text-[11px] text-gray-500 mt-1">Update koleksi make-up kamu...</p>
+                            <p class="text-[11px] text-gray-500 mt-1">Update koleksi make-up...</p>
                         </div>
                     </a>
                 </div>
@@ -154,12 +154,12 @@
         </section>
     </main>
 
-    <div class="fixed bottom-0 left-0 right-0 bg-white/90 backdrop-blur-md border-t border-gray-100 px-8 py-4 flex justify-between items-center md:hidden z-50">
+    <nav class="fixed bottom-0 left-0 right-0 bg-white/90 backdrop-blur-md border-t border-gray-100 px-8 py-4 flex justify-between items-center md:hidden z-50">
         <button onclick="window.location.href='homepage.html'" class="text-primary-red"><i class="fa fa-house text-xl"></i></button>
         <button onclick="window.location.href='lihatsemuaproduk.html'" class="text-gray-400 hover:text-primary-red transition"><i class="fa fa-compass text-xl"></i></button>
         <button onclick="window.location.href='wishlist.html'" class="text-gray-400 hover:text-primary-red transition"><i class="fa fa-heart text-xl"></i></button>
         <button onclick="window.location.href='user-dashboard.html'" class="text-gray-400 hover:text-primary-red transition"><i class="fa fa-user text-xl"></i></button>
-    </div>
+    </nav>
 
 </body>
 </html>
