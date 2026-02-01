@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Kuliner - AseliLokal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .primary-orange { background-color: #F26419; }
+        .text-primary-orange { color: #F26419; }
+        .shopee-color { background-color: #EE4D2D; }
+        .tokopedia-color { background-color: #03AC0E; }
+    </style>
+</head>
+<body class="bg-white pb-32">
+
+    <nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 bg-transparent transition-all" id="navScroll">
+        <button onclick="window.location.href='kuliner.html'" class="w-10 h-10 bg-white shadow-md rounded-full flex items-center justify-center text-gray-800">
+            <i class="fa fa-arrow-left"></i>
+        </button>
+        <button onclick="window.location.href='wishlist.html'" class="w-10 h-10 bg-white shadow-md rounded-full flex items-center justify-center text-gray-400">
+            <i class="fa fa-heart"></i>
+        </button>
+    </nav>
+
+    <div class="w-full aspect-square bg-orange-50 overflow-hidden rounded-b-[3.5rem] relative">
+        <img src="sambalembe.jpg" class="w-full h-full object-cover">
+        <div class="absolute top-24 right-6 flex flex-col gap-2">
+            <div class="bg-white/90 backdrop-blur p-2 rounded-2xl shadow-sm text-center">
+                <p class="text-[10px] font-bold text-gray-400 uppercase">Pedas</p>
+                <p class="text-sm font-black text-orange-600">Level 5</p>
+            </div>
+        </div>
+    </div>
+
+    <main class="max-w-2xl mx-auto px-6 mt-8">
+        <div class="flex justify-between items-start">
+            <div class="flex-grow">
+                <div class="flex items-center gap-2 mb-2">
+                    <span class="bg-green-100 text-green-700 text-[9px] font-bold px-2 py-1 rounded-lg uppercase tracking-wider">Halal Indonesia</span>
+                    <span class="text-xs text-gray-400"><i class="fa fa-location-dot"></i> Gianyar, Bali</span>
+                </div>
+                <h1 class="text-2xl font-black text-gray-800 leading-tight">Sambal Embe Khas Bali - Resep Nenek</h1>
+            </div>
+            <div class="bg-orange-50 p-2 rounded-2xl text-center min-w-[80px]">
+                <p class="text-[10px] font-bold text-orange-400">Terjual</p>
+                <p class="text-sm font-black text-orange-600">2.5k+</p>
+            </div>
+        </div>
+
+        <div class="mt-4 flex items-baseline gap-2">
+            <p class="text-3xl font-black text-primary-orange">Rp 35.000</p>
+            <p class="text-sm text-gray-400 line-through">Rp 45.000</p>
+        </div>
+
+        <div class="grid grid-cols-3 gap-2 mt-8">
+            <div class="border border-gray-100 p-3 rounded-2xl text-center">
+                <i class="fa fa-calendar-check text-orange-500 mb-1"></i>
+                <p class="text-[10px] font-bold text-gray-800">Tahan 6 Bln</p>
+            </div>
+            <div class="border border-gray-100 p-3 rounded-2xl text-center">
+                <i class="fa fa-leaf text-green-500 mb-1"></i>
+                <p class="text-[10px] font-bold text-gray-800">Tanpa Pengawet</p>
+            </div>
+            <div class="border border-gray-100 p-3 rounded-2xl text-center">
+                <i class="fa fa-truck-fast text-blue-500 mb-1"></i>
+                <p class="text-[10px] font-bold text-gray-800">Kirim Sehari</p>
+            </div>
+        </div>
+
+        <hr class="my-8 border-gray-100">
+
+        <section>
+            <h3 class="font-bold text-gray-800 mb-3">Tentang Rasa Ini</h3>
+            <p class="text-sm text-gray-500 leading-relaxed">
+                Sambal Embe khas Bali yang dibuat dengan bawang goreng pilihan, cabai rawit segar, dan terasi udang premium. Berbeda dengan Sambal Matah, Sambal Embe memiliki tekstur yang lebih garing karena bawangnya digoreng hingga kecokelatan. 
+                <br><br>
+                Cocok dinikmati dengan nasi hangat dan telur ceplok. Tanpa MSG dan tanpa pengawet buatan.
+            </p>
+        </section>
+
+        <div class="mt-8 bg-blue-50 p-4 rounded-3xl border border-blue-100">
+            <div class="flex gap-3">
+                <i class="fa fa-circle-info text-blue-500 mt-1"></i>
+                <div>
+                    <h4 class="text-xs font-bold text-blue-900">Catatan Pengiriman</h4>
+                    <p class="text-[11px] text-blue-800/70 mt-1">Disarankan menggunakan ekspedisi Kilat (Next Day) untuk menjaga kesegaran produk hingga ke tangan Anda.</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="mt-10">
+            <h3 class="font-bold text-gray-800 mb-4">Kata Lidah Warga</h3>
+            <div class="bg-gray-50 p-4 rounded-3xl mb-4">
+                <div class="flex justify-between items-center mb-2">
+                    <span class="text-xs font-bold text-gray-800">Budi Santoso</span>
+                    <div class="flex text-yellow-400 text-[10px] gap-0.5">
+                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                    </div>
+                </div>
+                <p class="text-xs text-gray-500 italic">"Gak pelit bawang, pedasnya nendang banget tapi masih sopan di lidah. Fix langganan!"</p>
+            </div>
+        </section>
+    </main>
+
+    <div class="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-xl border-t border-gray-100 p-6 flex gap-3 z-50">
+        <a href="https://shopee.co.id" target="_blank" class="flex-grow shopee-color text-white flex items-center justify-center gap-2 py-4 rounded-2xl font-bold text-sm shadow-lg shadow-orange-100">
+            <i class="fa-solid fa-bag-shopping"></i> Shopee
+        </a>
+        <a href="https://tokopedia.com" target="_blank" class="flex-grow tokopedia-color text-white flex items-center justify-center gap-2 py-4 rounded-2xl font-bold text-sm shadow-lg shadow-green-100">
+            <i class="fa-solid fa-cart-shopping"></i> Tokopedia
+        </a>
+    </div>
+
+    <script>
+        window.onscroll = function() {
+            const nav = document.getElementById('navScroll');
+            if (window.scrollY > 100) {
+                nav.classList.add('bg-white', 'shadow-sm');
+                nav.classList.remove('bg-transparent');
+            } else {
+                nav.classList.remove('bg-white', 'shadow-sm');
+                nav.classList.add('bg-transparent');
+            }
+        };
+    </script>
+</body>
+</html>
