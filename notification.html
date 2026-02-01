@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifikasi - AseliLokal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .primary-red { background-color: #E63946; }
+        .text-primary-red { color: #E63946; }
+        .unread-dot { width: 8px; height: 8px; background-color: #E63946; border-radius: 50%; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="bg-gray-50 pb-24">
+
+    <header class="sticky top-0 z-50 bg-white border-b border-gray-100 px-4 py-5">
+        <div class="max-w-2xl mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <a href="homepage.html" class="text-gray-600 hover:text-primary-red transition">
+                    <i class="fa fa-arrow-left text-xl"></i>
+                </a>
+                <h1 class="text-xl font-bold text-gray-800">Notifikasi</h1>
+            </div>
+            <button class="text-xs font-bold text-primary-red hover:underline">Tandai Dibaca</button>
+        </div>
+    </header>
+
+    <main class="max-w-2xl mx-auto px-4 py-6">
+        
+        <div class="flex gap-2 mb-6 overflow-x-auto hide-scrollbar">
+            <button class="primary-red text-white px-6 py-2 rounded-2xl text-xs font-bold whitespace-nowrap">Semua</button>
+            <button class="bg-white border border-gray-100 text-gray-500 px-6 py-2 rounded-2xl text-xs font-medium whitespace-nowrap hover:border-red-500 transition">Promo</button>
+            <button class="bg-white border border-gray-100 text-gray-500 px-6 py-2 rounded-2xl text-xs font-medium whitespace-nowrap hover:border-red-500 transition">Transaksi</button>
+            <button class="bg-white border border-gray-100 text-gray-500 px-6 py-2 rounded-2xl text-xs font-medium whitespace-nowrap hover:border-red-500 transition">Info</button>
+        </div>
+
+        <div class="space-y-3">
+
+            <div class="bg-red-50/50 p-4 rounded-[1.5rem] border border-red-100 flex gap-4 items-start relative">
+                <div class="w-12 h-12 bg-red-100 rounded-2xl flex items-center justify-center text-primary-red flex-shrink-0">
+                    <i class="fa fa-tags text-xl"></i>
+                </div>
+                <div class="flex-grow">
+                    <div class="flex justify-between items-start">
+                        <h4 class="text-sm font-bold text-gray-800 leading-tight">Promo Gajian: Diskon 50% Skincare Bandung!</h4>
+                        <div class="unread-dot mt-1 ml-2"></div>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-1">Jangan lewatkan kesempatan glowing hemat khusus hari ini untuk brand lokal pilihan.</p>
+                    <span class="text-[10px] text-gray-400 mt-2 block font-medium">2 jam yang lalu</span>
+                </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-[1.5rem] border border-gray-100 flex gap-4 items-start">
+                <div class="w-12 h-12 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-500 flex-shrink-0">
+                    <i class="fa fa-box text-xl"></i>
+                </div>
+                <div class="flex-grow">
+                    <h4 class="text-sm font-bold text-gray-800 leading-tight">Paket Sneaker Lokal Sedang Dikirim</h4>
+                    <p class="text-xs text-gray-500 mt-1">Pesanan #AL-99201 telah diserahkan ke kurir. Pantau lokasinya sekarang!</p>
+                    <span class="text-[10px] text-gray-400 mt-2 block font-medium">Kemarin, 14:20</span>
+                </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-[1.5rem] border border-gray-100 flex gap-4 items-start">
+                <div class="w-12 h-12 bg-pink-50 rounded-2xl flex items-center justify-center text-pink-500 flex-shrink-0">
+                    <i class="fa fa-book-open text-xl"></i>
+                </div>
+                <div class="flex-grow">
+                    <h4 class="text-sm font-bold text-gray-800 leading-tight">Tips Baru: Cara Merawat Tas Kanvas</h4>
+                    <p class="text-xs text-gray-500 mt-1">Cek artikel terbaru kami agar aksesoris lokalmu tetap awet bertahun-tahun.</p>
+                    <span class="text-[10px] text-gray-400 mt-2 block font-medium">2 hari yang lalu</span>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <nav class="fixed bottom-0 left-0 right-0 bg-white/90 backdrop-blur-md border-t border-gray-100 px-8 py-4 flex justify-between items-center md:hidden z-50">
+        <button onclick="window.location.href='homepage.html'" class="text-gray-400"><i class="fa fa-house text-xl"></i></button>
+        <button onclick="window.location.href='lihatsemuaproduk.html'" class="text-gray-400"><i class="fa fa-compass text-xl"></i></button>
+        <button onclick="window.location.href='wishlist.html'" class="text-gray-400"><i class="fa fa-heart text-xl"></i></button>
+        <button onclick="window.location.href='user-dashboard.html'" class="text-gray-400"><i class="fa fa-user text-xl"></i></button>
+    </nav>
+
+</body>
+</html>
