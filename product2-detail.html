@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Produk Fashion - AseliLokal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .primary-red { background-color: #E63946; }
+        .text-primary-red { color: #E63946; }
+        .shopee-color { background-color: #EE4D2D; }
+        .tokopedia-color { background-color: #03AC0E; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="bg-white pb-32">
+
+    <nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 bg-transparent transition-all" id="navScroll">
+        <button onclick="window.location.href='fashion.html'" class="w-10 h-10 bg-white/80 backdrop-blur rounded-full flex items-center justify-center text-gray-800 shadow-md">
+            <i class="fa fa-arrow-left"></i>
+        </button>
+        <div class="flex gap-3">
+            <button onclick="window.location.href='wishlist.html'" class="w-10 h-10 bg-white/80 backdrop-blur rounded-full flex items-center justify-center text-gray-400 hover:text-red-500 shadow-md">
+                <i class="fa fa-heart"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="relative w-full aspect-[4/5] bg-gray-200 overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800" class="w-full h-full object-cover">
+        <div class="absolute bottom-6 left-6 bg-black/50 backdrop-blur-md text-white px-4 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest">
+            Handcrafted in Solo
+        </div>
+    </div>
+
+    <main class="max-w-2xl mx-auto px-6 mt-8">
+        <div class="flex justify-between items-start">
+            <div>
+                <span class="text-xs font-bold text-gray-400 uppercase tracking-widest">Urban Streetwear • Lokal Pride</span>
+                <h1 class="text-2xl font-black text-gray-800 mt-1 uppercase italic">Sneaker Lokal Kanvas "Wira"</h1>
+                <div class="flex items-center gap-2 mt-2">
+                    <span class="bg-gray-100 text-gray-600 text-[10px] font-bold px-2 py-0.5 rounded">Best Seller</span>
+                    <span class="text-xs font-bold text-gray-800 ml-2"><i class="fa fa-star text-yellow-400"></i> 4.8</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <p class="text-3xl font-black text-primary-red">Rp 349.000</p>
+        </div>
+
+        <hr class="my-6 border-gray-100">
+
+        <section class="mb-6">
+            <h3 class="font-bold text-gray-800 text-sm mb-3">Pilihan Warna</h3>
+            <div class="flex gap-4">
+                <div class="w-10 h-10 rounded-full bg-black ring-2 ring-offset-2 ring-red-500 cursor-pointer"></div>
+                <div class="w-10 h-10 rounded-full bg-gray-200 border border-gray-100 cursor-pointer"></div>
+                <div class="w-10 h-10 rounded-full bg-white border border-gray-200 cursor-pointer"></div>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <div class="flex justify-between items-center mb-3">
+                <h3 class="font-bold text-gray-800 text-sm">Ukuran (EU)</h3>
+                <button class="text-[10px] font-bold text-primary-red underline">Size Chart</button>
+            </div>
+            <div class="grid grid-cols-5 gap-2">
+                <button class="py-3 rounded-xl border border-gray-100 text-xs font-bold text-gray-400 hover:border-red-500 transition">39</button>
+                <button class="py-3 rounded-xl border-2 border-red-500 text-xs font-bold text-primary-red">40</button>
+                <button class="py-3 rounded-xl border border-gray-100 text-xs font-bold text-gray-400">41</button>
+                <button class="py-3 rounded-xl border border-gray-100 text-xs font-bold text-gray-400">42</button>
+                <button class="py-3 rounded-xl border border-gray-100 text-xs font-bold text-gray-400">43</button>
+            </div>
+        </section>
+
+        <section class="mb-10">
+            <h3 class="font-bold text-gray-800 mb-2">Cerita Produk</h3>
+            <p class="text-sm text-gray-500 leading-relaxed">
+                Dibuat dengan teknik vulkanisir oleh pengrajin ahli di Solo. Menggunakan bahan kanvas 12oz yang awet dan sol karet anti-slip. Desain siluet klasik yang tak lekang oleh waktu, cocok untuk gaya kasual sehari-hari.
+            </p>
+        </section>
+
+        <section class="mb-10">
+            <h3 class="font-bold text-gray-800 mb-4">Lengkapi Gayamu</h3>
+            <div class="flex gap-4 overflow-x-auto hide-scrollbar">
+                <div class="min-w-[150px] bg-white p-3 rounded-3xl border border-gray-100">
+                    <img src="https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?auto=format&fit=crop&w=200" class="w-full aspect-square object-cover rounded-2xl mb-2">
+                    <h4 class="text-[11px] font-bold text-gray-800 truncate">Tote Bag Kanvas</h4>
+                    <p class="text-primary-red text-[10px] font-black">Rp 85.000</p>
+                </div>
+                <div class="min-w-[150px] bg-white p-3 rounded-3xl border border-gray-100">
+                    <img src="https://images.unsplash.com/photo-1550614000-4895a10e1bfd?auto=format&fit=crop&w=200" class="w-full aspect-square object-cover rounded-2xl mb-2">
+                    <h4 class="text-[11px] font-bold text-gray-800 truncate">Kaos Polos Heavy Cotton</h4>
+                    <p class="text-primary-red text-[10px] font-black">Rp 120.000</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-xl border-t border-gray-100 p-6 flex gap-3 z-50">
+        <a href="https://shopee.co.id" target="_blank" class="flex-grow shopee-color text-white flex items-center justify-center gap-2 py-4 rounded-2xl font-bold text-sm shadow-lg shadow-orange-100">
+            <i class="fa-solid fa-bag-shopping"></i> Beli di Shopee
+        </a>
+        <a href="https://tokopedia.com" target="_blank" class="flex-grow tokopedia-color text-white flex items-center justify-center gap-2 py-4 rounded-2xl font-bold text-sm shadow-lg shadow-green-100">
+            <i class="fa-solid fa-cart-shopping"></i> Tokopedia
+        </a>
+    </div>
+
+    <script>
+        window.onscroll = function() {
+            const nav = document.getElementById('navScroll');
+            if (window.scrollY > 150) {
+                nav.classList.add('bg-white', 'shadow-sm');
+                nav.classList.remove('bg-transparent');
+            } else {
+                nav.classList.remove('bg-white', 'shadow-sm');
+                nav.classList.add('bg-transparent');
+            }
+        };
+    </script>
+</body>
+</html>
