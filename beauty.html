@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty & Skincare - AseliLokal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .primary-red { background-color: #E63946; }
+        .text-primary-red { color: #E63946; }
+        .beauty-gradient { background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="bg-gray-50 pb-20">
+
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 px-4 py-4">
+        <div class="max-w-6xl mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <a href="homepage.html" class="text-gray-600 hover:text-primary-red transition">
+                    <i class="fa fa-arrow-left text-xl"></i>
+                </a>
+                <h1 class="text-xl font-bold text-gray-800">Beauty Lokal</h1>
+            </div>
+            <div class="flex gap-4">
+                <a href="search-result.html" class="text-gray-600"><i class="fa fa-search text-xl"></i></a>
+                <a href="wishlist.html" class="text-gray-600"><i class="fa-regular fa-heart text-xl"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-6">
+        
+        <div class="w-full h-44 beauty-gradient rounded-[2.5rem] mb-8 overflow-hidden relative flex items-center px-8 shadow-lg shadow-pink-100">
+            <div class="relative z-10 max-w-[200px]">
+                <span class="text-[10px] font-bold bg-white/30 text-white px-3 py-1 rounded-full uppercase">Beauty Deals</span>
+                <h2 class="text-2xl font-bold text-white mt-2 leading-tight">Wajah Glowing, Dompet Tenang</h2>
+                <p class="text-[10px] text-white/90 mt-2 italic">Diskon hingga 40% Brand Lokal pilihan</p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1570172619380-2126ad546448?auto=format&fit=crop&w=300" class="absolute right-0 bottom-0 h-full w-1/2 object-cover opacity-80" style="clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);">
+        </div>
+
+        <div class="flex gap-3 mb-8 overflow-x-auto hide-scrollbar">
+            <button class="bg-white border border-red-200 text-primary-red px-6 py-2 rounded-2xl text-xs font-bold whitespace-nowrap">Semua</button>
+            <button class="bg-white border border-gray-100 text-gray-500 px-6 py-2 rounded-2xl text-xs font-medium whitespace-nowrap hover:border-red-500 transition">Serum</button>
+            <button class="bg-white border border-gray-100 text-gray-500 px-6 py-2 rounded-2xl text-xs font-medium whitespace-nowrap hover:border-red-500 transition">Moisturizer</button>
+            <button class="bg-white border border-gray-100 text-gray-500 px-6 py-2 rounded-2xl text-xs font-medium whitespace-nowrap hover:border-red-500 transition">Sunscreen</button>
+            <button class="bg-white border border-gray-100 text-gray-500 px-6 py-2 rounded-2xl text-xs font-medium whitespace-nowrap hover:border-red-500 transition">Lip Care</button>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            
+            <div onclick="window.location.href='product1-detail.html'" class="bg-white p-3 rounded-[2rem] shadow-sm border border-gray-50 hover:shadow-xl transition-all group cursor-pointer">
+                <div class="aspect-[4/5] rounded-2xl overflow-hidden bg-gray-100 mb-3">
+                    <img src="serum.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="px-2">
+                    <span class="text-[9px] font-bold text-pink-400 uppercase tracking-widest">Skincare</span>
+                    <h4 class="text-sm font-bold text-gray-800 truncate">Brightening Vitamin C Serum</h4>
+                    <p class="text-primary-red font-black text-sm mt-1">Rp 149.000</p>
+                    <div class="flex items-center justify-between mt-3 text-[10px] text-gray-400">
+                        <span class="flex items-center gap-1"><i class="fa fa-star text-yellow-400"></i> 4.9</span>
+                        <span>Jakarta Selatan</span>
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='product2-detail.html'" class="bg-white p-3 rounded-[2rem] shadow-sm border border-gray-50 hover:shadow-xl transition-all group cursor-pointer">
+                <div class="aspect-[4/5] rounded-2xl overflow-hidden bg-gray-100 mb-3">
+                    <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=400" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="px-2">
+                    <span class="text-[9px] font-bold text-pink-400 uppercase tracking-widest">Face Care</span>
+                    <h4 class="text-sm font-bold text-gray-800 truncate">Daily Aloe Moisturizer</h4>
+                    <p class="text-primary-red font-black text-sm mt-1">Rp 85.000</p>
+                    <div class="flex items-center justify-between mt-3 text-[10px] text-gray-400">
+                        <span class="flex items-center gap-1"><i class="fa fa-star text-yellow-400"></i> 4.8</span>
+                        <span>Bandung</span>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+        <section class="mt-12 bg-pink-50 rounded-[2.5rem] p-8 border border-pink-100">
+            <h3 class="text-lg font-bold text-gray-800 mb-4">Tips Cantik Warga Lokal</h3>
+            <div class="flex flex-col gap-4">
+                <a href="article-detail3.html" class="flex gap-4 items-center bg-white p-3 rounded-2xl shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=150" class="w-16 h-16 rounded-xl object-cover">
+                    <div>
+                        <h4 class="text-sm font-bold text-gray-800 leading-tight">Urutan Skincare Malam untuk Pemula</h4>
+                        <p class="text-[10px] text-gray-400 mt-1">Hanya butuh 3 langkah simpel!</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="fixed bottom-0 left-0 right-0 bg-white/80 backdrop-blur-md border-t border-gray-100 px-8 py-4 flex justify-between items-center md:hidden z-50">
+        <button onclick="window.location.href='homepage.html'" class="text-gray-400"><i class="fa fa-house text-xl"></i></button>
+        <button onclick="window.location.href='lihatsemuaproduk.html'" class="text-gray-400"><i class="fa fa-compass text-xl"></i></button>
+        <button onclick="window.location.href='wishlist.html'" class="text-gray-400"><i class="fa fa-heart text-xl"></i></button>
+        <button onclick="window.location.href='user-dashboard.html'" class="text-gray-400"><i class="fa fa-user text-xl"></i></button>
+    </div>
+
+</body>
+</html>
